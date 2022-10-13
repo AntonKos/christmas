@@ -1,6 +1,6 @@
 import ICard from './ICards';
 
-interface IBasket { // как типизировать объекты в объекте?
+interface IBasket {
     obj?:ICard,
 }
 

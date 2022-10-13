@@ -62,7 +62,7 @@ export default class Controller {
   handleEventListenerReset = () => {
     this.model.currentCategories.length = 0;
 
-    this.view.rangeInput[0].value = '0'; // присвоить значения через цикл?
+    this.view.rangeInput[0].value = '0'; 
     this.view.rangeInput[1].value = '12';
     this.view.rangeInput[2].value = '1940';
     this.view.rangeInput[3].value = '2020';

@@ -81,17 +81,15 @@ export default class Model {
     this.showCards = callback;
   }
 
-  checkValueOfCategory(category:'size'|'shape'|'color', valueOfCategory?:string):void { // например: shape, шар
+  checkValueOfCategory(category:'size'|'shape'|'color', valueOfCategory?:string):void { 
     this.checkByCategory(category);
     if (valueOfCategory !== 'all') {
       this.currentCategories.push(valueOfCategory);
-      // добавляем значение категории (например: шар, или красный)
     }
     this.filterCards();
   }
 
-  checkByCategory(category:'size'|'shape'|'color') { // если находит в currentCategories любое значение категории, то удаляет его из массива
-    // лучше сделать через Set?  - уникальное значение
+  checkByCategory(category:'size'|'shape'|'color') { 
     this.currentCategories = this.currentCategories.filter(function (element) {
       if (this[category].includes(element)) {
         return false;
@@ -109,7 +107,6 @@ export default class Model {
 
   sortNameCount(sortParameter:string) {
     this.currentCards = this.sortArrayBy(sortParameter);
-    // можно ли в sortArrayBy сразу присвоить в this.currentCards
     this.showCards();
     this.desc = !this.desc;
   }

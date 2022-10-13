@@ -52,7 +52,7 @@ export default class View {
     this.priceInput = document.querySelectorAll('.price-input input');
     this.rangeCount = document.querySelector('.slider.count .progress');
     this.rangeYear = document.querySelector('.slider.year .progress');
-    this.priceGap = 1; // must be in the model?
+    this.priceGap = 1; 
 
     this.secondAside;
     this.toysWrapper;
@@ -163,7 +163,6 @@ export default class View {
         handlerAddToBasket(el.dataset.id); // delete card from basket
         handlerSetToyBoxes();
         this.basketImage.innerHTML = this.displayBasketScore(basket);
-        // здесь обновить стили карточек на основной странице? - выполнить поиск элемента в DOM?
       }
     });
 
@@ -243,7 +242,7 @@ export default class View {
     mainPageBtn.addEventListener('click', () => {
       treeWrapper.classList.add('hide');
       toysWrapper.classList.remove('hide');
-      showCards(); // вызов displayList с аргументами или лучше не перерисовывать все карточки, а в  изменить стили ?
+      showCards(); 
     });
 
     for (let index = 0; index < this.buttonsSort.length; index++) {
@@ -276,7 +275,7 @@ export default class View {
 
       const deleteImage = document.createElement('div');
       deleteImage.classList.add('delete-img');
-      deleteImage.setAttribute('data-id', basket[key].name); // назначил дата атрибут, как и в displayList. после нажатия удалить объект и перерисовать basket
+      deleteImage.setAttribute('data-id', basket[key].name); 
 
       toyWrapper.appendChild(deleteImage);
 
