@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christmas task</title>
+</head>
+
+<body>
+    <div class="wrapper">
+
+
+        <header>
+            <section class="section header-section">
+                <div class="container header-container">
+                    <div class="logo">
+                        <p></p>
+                    </div>
+                    <nav>
+                        <ul>
+                            <li>магазин новогодних игрушек</li>
+                        </ul>
+                        <div class="wrapper-search">
+                            <div class="search">
+                                <form>
+                                    <p><input class="input-search" type="search" name="q" placeholder="Поиск по сайту">
+                                       <input type="submit" value="Найти"></p>
+                                </form>
+                            </div>
+                            <div  class="basket-wrapper">
+                                <p  class="basket-img"></p>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </section>
+        </header>
+        <main>
+
+
+            <div class="toys-wrapper">
+
+
+                <aside>
+                    <section class="section aside-section">
+                        <div class="container aside-container">
+                            <div class="setting-box">
+                                <h1>Фильтры по значению</h1>
+                                <div class="value-filter shape">
+                                    <p>Shape</p>
+                                    <button class="button button-shape button-ball" data-filter="шар">
+                            ball
+                        </button>
+                                    <button class="button button-shape button-bell" data-filter="колокольчик">
+                            bell
+                        </button>
+                                    <button class="button button-shape button-cone" data-filter="шишка">
+                            cone
+                        </button>
+                                    <button class="button button-shape button-snowflake" data-filter="снежинка">
+                            snowflake
+                        </button>
+                                    <button class="button button-shape button-statuette" data-filter="фигурка">
+                            statuette
+                        </button>
+                                    <button class="button button-shape button-all" data-filter="all">
+                            all
+                        </button>
+
+                                </div>
+                                <div class="value-filter color">
+                                    <p>Color</p>
+                                    <div class="wrapper-color-btns">
+                                        <button class="button button-color button-color-white" data-filter="белый"></button>
+                                        <button class="button button-color button-color-yellow" data-filter="желтый"></button>
+                                        <button class="button button-color button-color-red" data-filter="красный"></button>
+                                        <button class="button button-color button-color-blue" data-filter="синий"></button>
+                                        <button class="button button-color button-color-green" data-filter="зелёный"></button>
+                                        <button class="button button-color button-color-all" data-filter="all">all</button>
+
+                                    </div>
+                                </div>
+                                <div class="value-filter size">
+                                    <p>Size</p>
+                                    <button class="button button-size button-size-big" data-filter="большой">
+                            big
+                        </button>
+                                    <button class="button button-size button-size-medium" data-filter="средний">
+                            medium
+                        </button>
+                                    <button class="button button-size button-size-small" data-filter="малый">
+                            small
+                        </button>
+                                    <button class="button button-size button-size-all" data-filter="all">
+                            all
+                        </button>
+                                </div>
+                                <div class="reset">
+                                    <button class="button reset-button">reset</button>
+                                </div>
+                            </div>
+                            <div class="setting-box">
+                                <h1>Фильтры по диапазону</h1>
+
+                                <p>Количество:</p>
+                                <div class="wrapper-price">
+      
+                                    <div class="price-input">
+                                      <div class="field">
+                                        <input type="number" class="input-min" value="0">
+                                      </div>
+                                      
+                                      <div class="field">
+                                        <input type="number" class="input-max" value="12">
+                                      </div>
+                                    </div>
+                              
+                                    <div class="slider count">
+                                      <div class="progress"></div>
+                                    </div>
+                                    <div class="range-input count">
+                                      <input type="range" class="range-min count" min="0" max="12" value="0" step="1">
+                                      <input type="range" class="range-max count" min="0" max="12" value="12" step="1">
+                                    </div>
+                                    
+                                </div>
+                                <p>Год:</p>
+                                  <div class="wrapper-price">
+      
+                                    <div class="price-input">
+                                      <div class="field">
+                                        <input type="number" class="input-min" value="1940">
+                                      </div>
+                                      
+                                      <div class="field">
+                                        <input type="number" class="input-max" value="2020">
+                                      </div>
+                                    </div>
+                              
+                                    <div class="slider year">
+                                      <div class="progress"></div>
+                                    </div>
+                                    <div class="range-input">
+                                      <input type="range" class="range-min year" min="1940" max="2020" value="1940" step="1">
+                                      <input type="range" class="range-max year" min="1940" max="2020" value="2020" step="1">
+                                    </div>
+                                    
+                                  </div>
+                            </div>
+                            <div class="setting-box">
+                                <h1>Сортировка</h1>
+                                <button class="button button-sort button-sort-name-plus" data-sort="name">
+                            По названию 
+                        </button>
+                                <button class="button button-sort button-sort-quantity-plus" data-sort="count">
+                            По количеству 
+                        </button>
+
+                            </div>
+                        </div>
+                    </section>
+                </aside>
+
+                <main>
+                    <section class="section main-section">
+                        <div class="container main-container">
+
+                        </div>
+                    </section>
+                </main>
+            </div>
+
+            <div class="tree-wrapper hide">
+
+                <section class="section tree-section">
+                    <container class="container tree-container">
+
+                        <aside class="second-aside">
+
+                        </aside>
+
+                    </container>
+                </section>
+
+            </div>
+        </main>
+
+        <footer>
+            <section class="section footer-section">
+                <div class="container footer-container">
+                    <div class="text-footer">
+                        <p>2022</p>
+                        <p>AntonKos</p>
+                    </div>
+                    <div class="logo-footer">
+                        <p></p>
+                    </div>
+
+                </div>
+            </section>
+        </footer>
+    </div>
+
+    
+</body>
+
+</html>
