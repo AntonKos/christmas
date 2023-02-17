@@ -37,6 +37,7 @@ export default class View {
   priceGap:number;
 
   constructor() {
+//  body 
     this.mainContainer = document.querySelector('.main-container');
     this.treeContainer = document.querySelector('.tree-container');
     this.basketImage = document.querySelector('.basket-img');

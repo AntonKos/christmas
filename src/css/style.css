@@ -54,6 +54,38 @@ footer {
     cursor: pointer;
 }
 
+.input-search{
+
+}
+
+/* input::-webkit-input-placeholder {
+    color: #B6C0A5; 
+    font-style: italic; 
+    background: #E0EFCA;
+  }
+  input:-moz-placeholder {
+    color: #B6C0A5; 
+    font-style: italic; 
+    background: #E0EFCA;
+  }
+  input:-ms-input-placeholder {
+    color: #B6C0A5; 
+    font-style: italic; 
+    background: #E0EFCA;
+} */
+
+
+  input {
+        
+        padding-left: 10px;
+        border: 2px solid #7BA7AB;
+        border-radius: 5px;
+        outline: none;
+        background: #F9F0DA;
+        color: #9E9C9C;
+    }
+  
+   
 nav {
     display: flex;
     align-items: center;

@@ -7,6 +7,7 @@ export default class Controller {
   view:IView;
 
   constructor(model:IModel, view:IView) {
+    console.log('controller')
     this.model = model;
     this.view = view;
     this.view.bindSetButtons(
